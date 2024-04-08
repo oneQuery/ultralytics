@@ -40,8 +40,7 @@ def main():
 
     # TODO: Check the directories
     # Copy images to the new directory
-    converted_coco_dir_list = glob(f"outputs/converted_coco*")
-    last_converted_coco_dir = converted_coco_dir_list[-1]
+    last_converted_coco_dir = glob(f"outputs/converted_coco*")[-1]
     img_copy_dir = f"{last_converted_coco_dir}/images"
     shutil.copy(img_dir, img_copy_dir)
 
